@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Kaki - Staging</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">
+                    <h1>Career Kaki</h1>
+                    <span class="staging-badge">STAGING</span>
+                </div>
+                <nav>
+                    <a href="/">Home</a>
+                    <a href="/privacy">Privacy</a>
+                    <a href="/terms">Terms</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="hero-section">
+                <h2>Welcome to Career Kaki</h2>
+                <p class="subtitle">Personalised Career Guidance & Job Search Support</p>
+            </div>
+
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="chat-title">
+                        <span class="bot-icon">🤖</span>
+                        <h3>AI Career Assistant</h3>
+                    </div>
+                    <button id="clearChat" class="clear-btn">Clear Chat</button>
+                </div>
+
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message bot-message">
+                        <div class="message-content">
+                            <p><strong>Welcome to Career Kaki Staging</strong></p>
+                            <p>you can chat with the bot to know more about career kaki</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chat-input-container">
+                    <div class="quick-actions">
+                        <button class="quick-btn" data-message="Tell me about job opportunities">Job Search</button>
+                        <button class="quick-btn" data-message="What courses should I take?">Course Search</button>
+                        <button class="quick-btn" data-message="How do I prepare for an interview?">Interview Guide</button>
+                        <button class="quick-btn" data-message="Help me with my resume">Resume Preparation</button>
+                    </div>
+                    <div class="input-wrapper">
+                        <textarea 
+                            id="userInput" 
+                            placeholder="Ask me anything about careers, jobs, or skills..."
+                            rows="1"
+                        ></textarea>
+                        <button id="sendBtn" class="send-btn">
+                            <span>Send</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M2 10L18 10M18 10L11 3M18 10L11 17" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="card-icon">🔍</div>
+                    <h3>Job Search</h3>
+                    <p>Discover opportunities across various industries in Singapore</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">📚</div>
+                    <h3>Course Search</h3>
+                    <p>Find training programs and upskilling opportunities</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">💼</div>
+                    <h3>Interview Guide</h3>
+                    <p>Prepare for interviews with expert tips and strategies</p>
+                </div>
+                <div class="info-card">
+                    <div class="card-icon">📄</div>
+                    <h3>Resume Preparation</h3>
+                    <p>Create compelling resumes that stand out</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Career Kaki Staging. All rights reserved.</p>
+            <p class="footer-note">This is a staging environment for QA testing purposes only.</p>
+            <div class="footer-links">
+                <a href="/privacy">Privacy Statement</a>
+                <span>|</span>
+                <a href="/terms">Terms of Use</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

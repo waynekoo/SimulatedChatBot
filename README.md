@@ -18,7 +18,7 @@ This is a **staging environment** designed for QA testing purposes. All bot resp
 
 ## 📋 Bot Response
 
-The bot provides a single, consistent response to all messages notifying users that the chatbot service is permanently down and directing them to the main website at `http://116.99.49.161/`.
+The bot provides a single, consistent response to all messages notifying users that the chatbot service is permanently down and directing them to the main website at `http://116.99.49.161/` , this is just some arbitrary url.
 
 ## 🚀 Setup Instructions
 
